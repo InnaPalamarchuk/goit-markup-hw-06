@@ -791,3 +791,28 @@ fill: var(--accent-focus-color);
     border-radius: 2px;
     fill: transparent;
 }
+.btn-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--text-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transition:  background-color var(--duration-ms) var(--cubic-bezier);
+}
+.btn-submit:is(:hover, :focus){
+    background-color: var(--accent-focus-color);
+}
