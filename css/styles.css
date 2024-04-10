@@ -225,94 +225,92 @@
 
 
    /* section-team*/
-   .section-team{
-    text-align: center;
+   .section-team {
     background-color: var(--icon-back-color);
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    text-align: center;
    }
-
-   .list-team{
+    
+   .list-team {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 72px;
    }
-
+    
    .item-team {
-    width: 264px;
-    width: calc((100% - 24 * 3) / 4);
+    max-width: 264px;
     background-color: var(--color-white);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
    }
-
-   .team-photo{
-    object-fit: cover;
-   }
-
-   .text-team{
+    
+    .team-photo {
+     object-fit: cover;
+    }
+    
+   .text-team {
    padding-top: 32px;
    padding-bottom: 32px;
    align-items: center;
    }
-
+    
    .title-team {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    text-transform: capitalize;
-    color: #2e2f42;
-    margin-bottom: 72px;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.11;
+   letter-spacing: 0.02em;
+   text-align: center;
+   text-transform: capitalize;
+   color: #2e2f42;
+   margin-bottom: 72px;
    }
-
+    
    .subtitle-team {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    text-align: center;
-    margin-bottom: 8px;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   color: #2e2f42;
+   text-align: center;
+   margin-bottom: 8px;
    }
-
+    
    .text-discription {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
    }
-   
-   
-   .icon-social-team{
-    display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-      gap: 24px;
+    
+   .icon-social-team {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   gap: 24px;
    }
-
-   .social-list{
-    fill: var(--icon-back-color);
+     
+   .social-list {
+   fill: var(--icon-back-color);
    }
-
-   .icon-link-team{
-    width: 40px;
-    height: 40px;
-    background-color: var(--color-btn);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+  .icon-link-team {
+   width: 40px;
+   height: 40px;
+   background-color: var(--color-btn);
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
-
+    
    .icon-link-team:hover,
-   .icon-link-team:focus{
+   .icon-link-team:focus {
     background-color: var(--color-hover-focus);
-    }
+   }
 
    /* section-portfolio */
 
@@ -841,6 +839,7 @@
 
     /* Laptop */
    @media screen and (min-width: 768px) {
+
    .open-menu-btn {
    display: none;
    }
@@ -924,8 +923,6 @@
     min-width: 496px;
    }
     
-
-
    /* section-adventages */
    .adventages-list{
     display: flex;
@@ -945,6 +942,23 @@
     align-content: flex-start;
    }
     
+   /*  section-Our Team */
+    .section-team .team-cont{
+    width: 584px;
+    }
+
+   .list-team{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    row-gap: 64px;
+   }
+
+   .item-team {
+    width: 264px;
+    height: 428px;
+    width: calc((100% - 24px) / 2);
+   }
     /* Section-Portfolio */
     
    .card-portfolio {
@@ -960,11 +974,7 @@
     width: calc((100% - 24px ) / 2);
     }
 
-
   }
-
-
-
 
 
     /* Desktop*/
@@ -1029,6 +1039,21 @@
     font-weight: 400;
    }
 
+   /* section-Our Team */
+
+    .section-team{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    }
+
+    .list-team {
+    flex-direction: row;
+    gap: 24px;
+    }
+
+   .item-team {
+    width: calc((100% - 24px * 3) / 4);
+   } 
 
     /* Section Portfolio */
     .section-portfolio {
@@ -1060,7 +1085,6 @@
    transform: translateY(0%);
    }
     
-   
      .portfolio-item:hover {
        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
          0px 1px 1px rgba(46, 47, 66, 0.16),
