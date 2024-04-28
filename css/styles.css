@@ -646,7 +646,7 @@
     visibility: hidden;
     pointer-events: none;
     background: rgba(46, 47, 66, 0.4);
-     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
 
    .is-open{
@@ -660,8 +660,8 @@
     top: 50%;
     left: 50%;
     border-radius: 4px;
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    min-height: 623px;
     padding: 24px;
     background-color: #fcfcfc;
     transform: translate(-50%, -50%);
@@ -760,8 +760,8 @@
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    display: block;
     margin-bottom: 4px;
+    display: block;
    }
 
    .icon-modal{
@@ -811,8 +811,10 @@
     letter-spacing: 0.04em;
     color: #8e8f99;
     min-width: 388px;
+    /*
     display: flex;
     align-items: center;
+    */
    }
 
     .modal-checkbox {
@@ -843,6 +845,7 @@
     text-decoration-skip-ink: none;
     color: var(--color-btn);
     margin: 2px;
+    
    }
 
 
@@ -1063,6 +1066,19 @@
     width: 264px;
    }
   
+   /* Modal-tabet */
+
+
+   .modal{
+   width: 408px;
+   min-height: 584px;
+   }
+
+   .check-text{
+   display: flex;
+   align-items: center;
+   }
+
 
   }
 
@@ -1240,3 +1256,6 @@
    }
 
    }
+
+
+   
