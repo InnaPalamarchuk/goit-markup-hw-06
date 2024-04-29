@@ -38,7 +38,7 @@
                 </li>
             </ul>
         </address> 
-        <button type="button" class="open-menu-btn">
+        <button type="button" class="open-menu-btn" data-menu-open>
             <svg class="icon-menu-btn" width="24" height="24">
                 <use href="./images/icons.svg#icon-menu"></use>
             </svg>
@@ -49,7 +49,7 @@
         <section class="hero hero-bgr ">
             <div class="container hero-wrap">
             <h1 class="title-hero">Effective Solutions  for Your Business</h1>
-            <button class="button-hero" type="button" >Order Service</button>
+            <button class="button-hero" type="button" data-modal-open>Order Service</button>
             </div>
         </section> 
         <section class="our-adventages">
@@ -491,9 +491,9 @@
         </div>
         </div>
     </footer> 
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
         <div class="modal">
-            <button type="button" class="modal-close">
+            <button type="button" class="modal-close" data-modal-close>
                 <svg class="modal-close-svg" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
@@ -563,8 +563,8 @@
             </form>
         </div>
     </div>
-    <div class="mobile-menu">
-        <button type="button" class="mob-menu-btn">
+    <div class="mobile-menu is-open" data-menu>
+        <button type="button" class="mob-menu-btn" data-menu-close>
             <svg class="mob-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -627,5 +627,51 @@
             </ul>
         </div>
     </div> 
+    <script>
+        (() => {
+                const refs = {
+                    openMenuBtn: document.querySelectorAll('[data-menu-open]'),
+                    closeMenuBtn: document.querySelectorAll('[data-menu-close]'),
+                    menu: document.querySelector('[data-menu]'),
+                };
+
+
+                refs.openMenuBtn.forEach(element => {
+                    element.addEventListener('click', toggleMenu);
+                });
+                refs.closeMenuBtn.forEach(element => {
+                    element.addEventListener('click', toggleMenu);
+                });
+
+
+                function toggleMenu() {
+                    refs.menu.classList.toggle('is-open');
+                    document.body.classList.toggle('no-scroll');
+                }
+            })();
+    </script>
+    <script>
+        (() => {
+                const refs = {
+                    openMenuBtn: document.querySelectorAll('[data-modal-open]'),
+                    closeMenuBtn: document.querySelectorAll('[data-modal-close]'),
+                    menu: document.querySelector('[data-modal]'),
+                };
+
+
+                refs.openMenuBtn.forEach(element => {
+                    element.addEventListener('click', toggleMenu);
+                });
+                refs.closeMenuBtn.forEach(element => {
+                    element.addEventListener('click', toggleMenu);
+                });
+
+
+                function toggleMenu() {
+                    refs.menu.classList.toggle('is-open');
+                    document.body.classList.toggle('no-scroll');
+                }
+            })();
+    </script>
 </body>
 </html>
