@@ -1357,8 +1357,8 @@
     color: #4d5ae5;
     }
 
-    .mob-link-nav:active{
-      color: #4d5ae5;
+    .active{
+     color:  #404bbf;
     }
 
    .mab-nenu-contact {}
@@ -1386,6 +1386,7 @@
     color: #4d5ae5;
    }
     
+
    .mob-list-icon {
     display: flex;
     justify-content: center;
